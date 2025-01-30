@@ -30,9 +30,10 @@
 .stopwatchimage{
     width:99%;
     z-index:-1;
+    height:800px;
     position:absolute;
     bottom:25%;
-      
+}
       
 
         #stopwatch {
@@ -53,7 +54,12 @@
             z-index: 1;
             
         }
-
+        #controls{
+            display: flex;
+            justify-content: center;
+            position: relative;
+            bottom:300px;
+        }
         #stopwatch:hover {
             transform: scale(1.1);
 
@@ -115,7 +121,7 @@
         <div id="controls">
             <button id="start" onclick="start()">start</button>
             <button id="stop" onclick="stop()">stop</button>
-            <button id="reset" onclick="reset()">reset</button>6
+            <button id="reset" onclick="reset()">reset</button>
         </div>
         <script>
      let min =0;
